@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "Form";
+}
+<h1>@ViewData["Title"]</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    form {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-family: Arial, sans-serif;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #5cb85c;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #4cae4c;
+    }
+  </style>
+</head>
+<body>
+  <form action="/submit" method="POST">
+    
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="surname">Surname</label>
+    <input type="text" id="surname" name="surname" required>
+
+    <label for="email">Emale</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone number</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="book-title">The title of the book</label>
+    <input type="text" id="book-title" name="book_title" required>
+
+    <label for="author">The author of the book</label>
+    <input type="text" id="author" name="author" required>
+
+    <label for="start-date">Rental start date</label>
+    <input type="date" id="start-date" name="start_date" required>
+
+    <label for="end-date">Return dat</label>
+    <input type="date" id="end-date" name="end_date" required>
+
+    <label for="comment">Comment</label>
+    <textarea id="comment" name="comment" rows="4"></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</body>
+</html>
