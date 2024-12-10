@@ -17,8 +17,15 @@ public class HomeController : Controller
     {
         return View();
     }
-
-    public IActionResult Privacy()
+    public IActionResult About()
+    {
+        return View();
+    }
+    public IActionResult Contacts()
+    {
+        return View();
+    }
+    public IActionResult Form()
     {
         return View();
     }
